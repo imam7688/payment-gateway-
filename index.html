@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>পেমেন্ট গেটওয়ে</title>
+  <style>
+    body { font-family: Arial; background: #f0f0f0; padding: 20px; max-width: 500px; margin: auto; }
+    .section { background: #fff; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
+    .section h3 { margin-top: 0; display: flex; align-items: center; }
+    .section img { height: 30px; margin-right: 10px; }
+    a.button { display: block; text-align: center; background: #006AFF; color: white; padding: 10px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
+    input, button { padding: 10px; width: 100%; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">ইমাম হোসেনের পেমেন্ট গেটওয়ে</h2>
+
+  <div class="section">
+    <h3><img src="https://i.ibb.co/W6sD8rh/bkash-logo.png" alt="Bkash"> বিকাশ মার্চেন্ট (পেমেন্ট)</h3>
+    <a class="button" href="https://bkash.page.link/5oQA" target="_blank">বিকাশ অ্যাপে পেমেন্ট করুন</a>
+    <small>আপনার ইচ্ছামতো পরিমাণ দিতে পারবেন</small>
+  </div>
+
+  <div class="section">
+    <h3><img src="https://i.ibb.co/W6sD8rh/bkash-logo.png" alt="Bkash"> বিকাশ পার্সোনাল (সেন্ড মানি)</h3>
+    <a class="button" href="https://bkash.page.link/GDpz" target="_blank">বিকাশ অ্যাপে সেন্ড মানি করুন</a>
+    <small>নাম্বার: (হাইডেড, লিংকে যুক্ত)</small>
+  </div>
+
+  <div class="section">
+    <h3><img src="https://i.ibb.co/m5c6Fqz/nagad-logo.png" alt="Nagad"> নগদ পার্সোনাল (সেন্ড মানি)</h3>
+    <a class="button" href="https://nagad.com.bd" target="_blank">নগদ অ্যাপে সেন্ড মানি করুন</a>
+    <small>নাম্বার: (হাইডেড, তোমার: 01905086206)</small>
+  </div>
+
+  <div class="section">
+    <h3>ট্রানজেকশন আইডি সাবমিশন</h3>
+    <input type="text" id="name" placeholder="আপনার নাম">
+    <input type="text" id="trxid" placeholder="TrxID">
+    <button onclick="submitTrx()">সাবমিট করুন</button>
+  </div>
+
+  <script>
+    function submitTrx() {
+      const name = document.getElementById('name').value;
+      const trxid = document.getElementById('trxid').value;
+      if (name && trxid) {
+        alert("ধন্যবাদ " + name + "! আপনার ট্রানজেকশন আইডি: " + trxid + " গ্রহণ করা হয়েছে।");
+      } else {
+        alert("সব তথ্য পূরণ করুন।");
+      }
+    }
+  </script>
+
+</body>
+</html>
